@@ -39,7 +39,7 @@ services:
     depends_on:
       - php-fpm
     ports:
-      - "81:80"
-      - "444:443"
+      - "80:80"
+      - "443:443"
 
 

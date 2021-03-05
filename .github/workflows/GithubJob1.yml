@@ -10,8 +10,9 @@ jobs:
         uses: actions/checkout@v2
       - name: update code and containers
         run: |
+          ls
           sudo docker image prune -f
-          cd ~/apps/testsymfony5docker/docker/
+          cd ~/Project/symfonydocker/docker/
           sudo docker-compose down
           cd ..
           git fetch origin
